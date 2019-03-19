@@ -7,9 +7,9 @@ namespace LargNumberOfWordsInSentance
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            var S = "We test coders. Give us a try?";
+            //var S = "We test coders. Give us a try?";
             //var S = "Forget  CVs..Save time . x x";
 
             var C = S.ToArray();
@@ -44,8 +44,8 @@ namespace LargNumberOfWordsInSentance
                 position++;
             }
 
-            Console.WriteLine(maxWord);
-            //Console.WriteLine(Sentances.ElementAt(--position));
+            //Console.WriteLine(maxWord);
+            return maxWord;
         }
 
         public static int CountWords(string s)
